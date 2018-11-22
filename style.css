@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background: url(img/bg.png) no-repeat 50% 0 #f9f9f9;
+	font:14px/1.67 Arial, Helvetica, sans-serif ;
+	padding:55px 0;
+}
+
+.wrapper{
+	width:960px;
+	margin: 0 auto;
+
+}
+
+
+header{
+
+	background: #ffffff;
+	height: 172px;
+
+}
+
+header h1{
+	float: left;
+	margin: 30px 15px 0;
+}
+
+nav{
+	float: left;
+	clear: left;
+}
+
+nav li{
+	float: left;
+	margin: 50px 1px 9px 20px;
+}
+
+nav li a{
+	color:black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.content{
+	background: red
+	min-height:500px;
+	width: 70%;
+	float: right;
+	padding: 10px 15px;
+}
+
+.inner-content{
+	background: #fff;
+	min-height:500px;
+}
+a{
+	float: right;
+}
+
+.sidebar{
+	
+	width: 30%;
+	float: left;
+	padding: 10px 15px 10px;
+}
+
+.inner-sidebar{
+	background: white;
+	min-height:500px;
+}
+
+.footer{
+	
+	min-height:500px;
+	padding: 10px 15px 10px
+}
